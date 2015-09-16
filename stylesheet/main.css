@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #FFFFFF;
+  font-family: sans-serif; }
+
+#accordian {
+  background: #E5E5E5;
+  width: 250px;
+  margin: 100px auto 0 auto;
+  color: white;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6), 0 0 200px 1px rgba(255, 255, 255, 0.5); }
+
+#accordian h3 {
+  font-size: 12px;
+  line-height: 34px;
+  padding: 0 10px;
+  cursor: pointer;
+  background: #56585C;
+  background: linear-gradient(#565853, #5B5D62); }
+
+#accordian h3:hover {
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+  background: #7EA51C; }
+
+#accordian h3 span {
+  font-size: 16px;
+  margin-right: 10px; }
+
+#accordian li {
+  list-style-type: none; }
+
+#accordian ul ul li a {
+  color: #56585C;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 27px;
+  display: block;
+  padding: 0 15px;
+  transition: all 0.15; }
+
+#accordian ul ul li a:hover {
+  background: #7EA51C;
+  border-left: 5px solid green; }
+
+#accordian ul ul {
+  display: none; }
+
+#accordian li.active ul {
+  display: block; }
